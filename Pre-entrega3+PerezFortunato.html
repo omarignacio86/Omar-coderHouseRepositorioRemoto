@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Aplicación para calculo de superficie</h1> 
+   <form id="formulario">
+   
+    <div class="estilo">
+   <label for="rectangulo">RECTANGULO</label>
+   <input id="rectangulo" type="radio" name="figura">
+   <label for="circulo">CIRCULO</label>
+   <input id="circulo" type="radio" name="figura">
+   </div>
+
+   <div class="estilo"   >
+   <label for="lado1">LADO 1</label>
+   <input disabled id="lado1" type="number" name="l1">
+   </div>
+
+   <div class="estilo"   >
+   <label for="lado2">LADO 2</label>
+   <input disabled id="lado2" type="number" name="l2">
+   </div>
+
+   <div class="estilo"    >
+   <label for="radio">RADIO</label>
+   <input disabled id="radio" type="number" name="r"> 
+   </div>
+
+   <div class="estilo">
+   <button id="calculo">Calcular</button>
+   </div>
+</form>
+
+<div class="estilo1">
+<button id="save">Guardar</button>
+</div>
+
+<div class="estilo2">
+    <button id="recuperar">Recuperar datos</button>
+</div>
+     
+
+ 
+    <div class="tabladatos">
+    <table id="tablaresultados">
+        <tr>
+          <th>Lado1</th>
+          <th>Lado2</th>
+          <th>Radio</th>
+          <th>Superficie</th> 
+       </tr>
+    <tr>
+        <td>Lado1</td>
+        <td>Lado2</td>
+        <td>Radio</td>
+        <td>Superficie</td>
+    </tr>
+    </table>
+</form>
+
+</div>
+
+<style>
+    h1 {
+    text-align: center;    
+    }
+    td,
+    th{
+     text-align: center;
+     padding: 10px;   
+     border:solid red 1px
+    }
+    form{
+    text-align: center;    
+    }
+    .tabladatos table{
+     margin: 0 auto;    
+    }
+
+    .estilo{
+     background-color: rgb(43, 101, 226);
+     padding-bottom: 20px;
+
+    }
+    .estilo1
+    {
+      text-align: center;  
+      background-color: rgb(43, 101, 226);
+     padding-bottom: 20px;
+    }
+    .estilo2{
+        text-align: center;
+        background-color: rgb(43, 101, 226);
+       padding-bottom: 20px;
+    }
+    #save
+    #recuperar
+    #calculo{
+        font-size: 23px;
+    }
+    
+     
+</style>
+
+
+
+   <script src="Pre-entrega3+PerezFortunato.js"></script> 
+</body>
+</html>
