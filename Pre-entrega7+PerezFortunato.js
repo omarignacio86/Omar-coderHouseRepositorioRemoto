@@ -38,6 +38,28 @@ let tablaresultados = document.getElementById("tablaresultados")
 let figurasString = localStorage.getItem("figurasGuardadas")
 let contenedor1 = document.getElementById("datos1")
 
+
+
+let boca = document.getElementById("b")
+boca.addEventListener("click", function () {
+    fetch("datosCanchas.json")
+        .then(response => response.json())
+        .then(data => {
+            const canchas = data.canchas
+            let dataBoca = canchas.find(x => x.nombre === "Boca")
+            lado1.textContent = (dataBoca.lado1)
+            console.log(typeof(dataBoca.lado1))
+            lado2.textContent= dataBoca.lado2
+           console.log(lado2.textContent)
+        })
+        .catch(error => console.error("ha ocurrido un error"))
+})
+
+
+
+
+
+
 //FUNCIÓN PARA GENERAR ID 
 function obtenerNuevoId() {
     let ultimoId = localStorage.getItem("ultimoId") || "-1"
